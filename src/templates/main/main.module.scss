@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    height: 100vh; 
+    a {
+      color: dimgray; 
+      font-size: 3.5rem;
+      margin: 0.5rem;
+    }
+    h1 {
+      color:black;
+    }
+  }

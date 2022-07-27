@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--high-offset);
+
+  padding: var(--low-offset) var(--mid-offset);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+
+  border: none;
+
+  background-color: unset;
+  color: var(--dark-grey-color);
+
+  cursor: pointer;
+
+  svg {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+
+  padding: 0 var(--mid-offset);
+
+  border: none;
+  border-radius: var(--high-border-radius);
+
+  font-size: 1.8rem;;
+  color: var(--dark-grey-color);
+  background-color: var(--light-grey-color);
+}

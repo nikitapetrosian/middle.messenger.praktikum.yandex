@@ -1,0 +1,10 @@
+.wrapper {
+  padding: var(--low-offset) 0;
+  overflow-y: auto;
+}
+.image {
+  background-image: url('../../../../assets/image/chats.jpg');
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

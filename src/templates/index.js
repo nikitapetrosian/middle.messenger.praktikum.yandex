@@ -1,0 +1,7 @@
+export { mainTemplate } from './main/main'
+export { chatTemplate } from './chat/chat'
+export { errorTemplate } from './error/error'
+export { signInTemplate } from './auth/signIn/signIn'
+export { signUpTemplate } from './auth/signUp/signUp'
+export { editProfileTemplate } from './profile/editProfile/editProfile'
+export { editPasswordTemplate } from './profile/editPassword/editPassword'
