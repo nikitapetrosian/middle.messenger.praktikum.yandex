@@ -37,6 +37,7 @@
     "sass": "1.53.0"
   },
   "dependencies": {
-    "handlebars": "^4.7.7"
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.19"
   }
 }
