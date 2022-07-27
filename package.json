@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "chat",
   "type": "module",
-  "main": "index.js",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "targets": {
     "default": {
@@ -16,7 +15,7 @@
   },
   "scripts": {
     "dev": "parcel static/index.html --open --no-cache --port 3000",
-    "build": "parcel build static/index.html",
+    "build": "rm -rf dist & parcel build static/index.html",
     "start": "yarn build & nodemon ./app.js"
   },
   "repository": {
