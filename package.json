@@ -16,8 +16,8 @@
   },
   "scripts": {
     "dev": "parcel static/index.html --open --no-cache --port 3000",
-    "build": "parcel build index.html",
-    "start": "yarn build & nodemon ./app.js --port 3000"
+    "build": "parcel build static/index.html",
+    "start": "yarn build & nodemon ./app.js"
   },
   "repository": {
     "type": "git",
