@@ -1,0 +1,13 @@
+.form {
+  padding: var(--high-offset) var(--mid-offset);
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mid-offset);
+}
+
+.button {
+  margin-top: var(--mid-offset);
+}

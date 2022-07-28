@@ -1,0 +1,8 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: clamp(27rem, 70%, 35rem) 1fr;
+  grid-template-rows: var(--header-height) 1fr;
+}

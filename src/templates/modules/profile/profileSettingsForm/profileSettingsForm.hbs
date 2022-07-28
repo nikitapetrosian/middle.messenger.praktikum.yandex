@@ -1,0 +1,16 @@
+<div class={{styles.wrapper}}>
+  <form class={{styles.form}}>
+    <div class={{styles.avatar}}>
+      <img class={{styles.image}} src={{avatar}} alt='' />
+    </div>
+    <h2 class={{styles.title}}>{{title}}</h2>
+    <div class={{styles.fields}}>
+      {{#each fields}}
+        {{{this}}}
+      {{/each}}
+    </div>
+  </form>
+  <div class={{styles.button}}>
+    {{{button}}}
+  </div>
+</div>

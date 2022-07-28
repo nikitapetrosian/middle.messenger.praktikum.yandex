@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--low-offset) var(--mid-offset);
+
+  border-left: 0.1rem solid var(--dark-grey-color);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 100%;
+}
+
+.name {
+  margin: 0;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.time {
+  margin: 0;
+
+  color: var(--dark-grey-color);
+}

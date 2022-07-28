@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+  border: none;
+  background-color: unset;
+  color: var(--dark-grey-color);
+  cursor: pointer;
+  transition: opacity var(--fast-animation);
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+  svg {
+    width: 70%;
+    height: 70%;
+  }
+}

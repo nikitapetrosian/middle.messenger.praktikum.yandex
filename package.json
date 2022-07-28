@@ -1,0 +1,43 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "chat",
+  "type": "module",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "default": {
+      "sourceMap": true,
+      "includeNodeModules": [
+        "handlebars"
+      ],
+      "context": "browser"
+    }
+  },
+  "scripts": {
+    "dev": "parcel static/index.html --open --no-cache --port 3000",
+    "build": "rm -rf dist & parcel build static/index.html",
+    "start": "yarn build & nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitapetrosian/middle.messenger.praktikum.yandex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikitapetrosian/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/nikitapetrosian/middle.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "2.6.2",
+    "@parcel/transformer-sass": "2.6.2",
+    "express": "4.18.1",
+    "parcel": "2.6.2",
+    "parcel-transformer-hbs": "1.0.4",
+    "sass": "1.53.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.19"
+  }
+}
