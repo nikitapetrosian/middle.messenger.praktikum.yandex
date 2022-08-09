@@ -1,0 +1,17 @@
+.search-form {
+  width: 100%;
+  margin-bottom: 20px;
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline-color: var(--main-green-color);
+    border-radius: 9px;
+    height: 40px;
+    background-color: var(--main-gray-color);
+
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}

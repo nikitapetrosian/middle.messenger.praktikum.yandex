@@ -1,0 +1,25 @@
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--transporent-gray-color);
+  display: flex;
+
+  &__body {
+    background-color: var(--main-white-color);
+    padding: 40px;
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    background-color: var(--transparent);
+    border: none;
+    cursor: pointer;
+  }
+}

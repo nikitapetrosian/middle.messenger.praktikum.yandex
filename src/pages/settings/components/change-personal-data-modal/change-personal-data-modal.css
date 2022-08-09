@@ -1,0 +1,16 @@
+.change-personal-data-modal {
+  width: 620px;
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  &__fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

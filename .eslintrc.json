@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb-typescript"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "max-len": [
+            "error",
+            100
+        ],
+        "class-methods-use-this": "off",
+        "consistent-return": "off",
+        "@typescript-eslint/no-unused-vars": 2
+    }
+}
