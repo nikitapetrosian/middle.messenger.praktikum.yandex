@@ -1,0 +1,26 @@
+@import "normalize.css";
+
+:root {
+  --main-green-color: #14ba1b;
+  --second-green-color: #4fb853;
+  --main-gray-color: #efefef;
+  --main-red-color: #fa0202;
+  --second-red-color: #d01a1a;
+  --main-white-color: #fff;
+  --transparent: transparent;
+  --transporent-gray-color: rgb(0 0 0 / 50%);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif, system-ui;
+}
+
+.hidden {
+  display: none;
+}

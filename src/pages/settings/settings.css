@@ -1,0 +1,39 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+  &__login {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  &__to-chat {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  &__items {
+    margin-bottom: 30px;
+    width: 680px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__logout-link {
+    color: var(--main-red-color);
+
+    &:hover {
+      color: var(--second-red-color);
+    }
+  }
+}

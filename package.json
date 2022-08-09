@@ -1,0 +1,58 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "messenger",
+  "engines": {
+    "node": ">=16.16.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "not dead"
+  ],
+  "scripts": {
+    "dev": "parcel public/index.html --open --no-cache --port 3000",
+    "build": "npx rimraf .parcel-cache dist/* && parcel build public/index.html",
+    "start": "npm run build && node server/index.js",
+    "check-ts": "tsc --noEmit",
+    "check-linter": "eslint --ext .ts ./src",
+    "check-styles": "npx stylelint \"**/*.css\"",
+    "check-all": "npm run check-ts && npm run check-linter && npm run check-styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitapetrosian/middle.messenger.praktikum.yandex.git"
+  },
+  "author": "Petrosian Nikita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikitapetrosian/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/nikitapetrosian/middle.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "@types/uuid": "8.3.4",
+    "@typescript-eslint/eslint-plugin": "5.31.0",
+    "@typescript-eslint/parser": "5.31.0",
+    "eslint": "8.20.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "express": "4.18.1",
+    "parcel-bundler": "1.12.5",
+    "parcel-reporter-static-files-copy": "1.3.4",
+    "parcel-transformer-hbs": "1.0.4",
+    "postcss": "8.4.14",
+    "postcss-custom-properties": "12.1.8",
+    "postcss-import": "14.1.0",
+    "postcss-nested": "5.0.6",
+    "postcss-url": "10.1.3",
+    "rimraf": "3.0.2",
+    "stylelint": "14.9.1",
+    "stylelint-config-standard": "26.0.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
+    "typescript": "4.7.4"
+  },
+  "dependencies": {
+    "handlebars": "4.7.7",
+    "uuid": "8.3.2"
+  }
+}

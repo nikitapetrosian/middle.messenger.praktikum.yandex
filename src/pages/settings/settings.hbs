@@ -1,0 +1,19 @@
+<main class="settings">
+  <div class="settings__to-chat">
+    {{{toChatLink}}}
+  </div>
+  {{{avatar}}}
+  <h1 class="settings__login">{{login}}</h1>
+  <section class="settings__items">
+    {{#each settingsItems}}
+      {{{this}}}
+    {{/each}}
+  </section>
+  <section class="settings__buttons">
+    {{{changePersonalDataButton}}}
+    {{{changePasswordButton}}}
+    {{{logOutLink}}}
+  </section>
+  {{{changePersonalDataModal}}}
+  {{{changePasswordModal}}}
+</main>
