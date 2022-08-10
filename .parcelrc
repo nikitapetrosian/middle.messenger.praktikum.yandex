@@ -1,0 +1,8 @@
+{
+    "extends": "@parcel/config-default",
+    "transformers": {
+      "*.hbs": ["parcel-transformer-hbs"],
+      "*.css": ["@parcel/transformer-postcss"]
+    },
+    "reporters":  ["...", "parcel-reporter-static-files-copy"]
+}

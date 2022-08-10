@@ -1,0 +1,10 @@
+.link {
+  color: var(--main-green-color);
+  font-size: 16px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--second-green-color);
+    text-decoration: underline;
+  }
+}

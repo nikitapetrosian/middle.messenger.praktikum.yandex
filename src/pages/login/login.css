@@ -1,0 +1,10 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__link {
+    margin-top: 20px;
+  }
+}

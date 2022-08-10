@@ -1,0 +1,20 @@
+.message-form {
+  display: flex;
+  align-items: center;
+
+  .form-field {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 9px;
+  }
+
+  .form-field__input {
+    border-bottom: none;
+    border-radius: 9px;
+  }
+
+  &__input-content {
+    width: 100%;
+    padding-right: 20px;
+  }
+}
