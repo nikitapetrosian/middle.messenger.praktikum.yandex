@@ -1,4 +1,4 @@
-import EventBus from './EventBus';
+import { EventBus } from './EventBus';
 
 export type TState = Record<string, any>;
 
@@ -47,7 +47,7 @@ class Store {
     this.storeDidMount();
   }
 
-  public storeDidMount() {}
+  public storeDidMount() { }
 
   private _storeDidUpdate(oldState: TState, newState: TState) {
     const response = this.storeDidUpdate(oldState, newState);
