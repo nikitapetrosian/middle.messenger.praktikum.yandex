@@ -1,5 +1,5 @@
 import { v4 as uuid } from 'uuid';
-import EventBus from './EventBus';
+import { EventBus } from './EventBus';
 import getElementsFromString from '../utils/getTemplateFromHTML';
 
 export type TProps = Record<string, any>;
@@ -60,7 +60,7 @@ class Block {
     this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
   }
 
-  public componentDidMount() {}
+  public componentDidMount() { }
 
   private _componentDidUpdate(oldProps: TProps, newProps: TProps) {
     const response = this.componentDidUpdate(oldProps, newProps);
@@ -134,7 +134,7 @@ class Block {
     this._addEvents();
   }
 
-  render(): void | string {}
+  render(): void | string { }
 
   public getContent() {
     return this.element;
@@ -173,7 +173,7 @@ class Block {
     this.onDestroy();
   }
 
-  public onDestroy() {}
+  public onDestroy() { }
 }
 
 export default Block;

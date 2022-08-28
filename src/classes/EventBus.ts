@@ -1,4 +1,4 @@
-class EventBus {
+export class EventBus {
   readonly listeners: Record<string, Function[]>;
 
   constructor() {
@@ -33,12 +33,12 @@ class EventBus {
     });
   }
 
-  _checkEvent(event: string) {
+  private _checkEvent(event: string) {
     // Если событий с таким именем нет, выкидываем ошибку
     if (!this.listeners[event]) {
       throw new Error(`Нет события: ${event}`);
     }
   }
 }
-
-export default EventBus;
+//module.exports = EventBus
+//export default EventBus;

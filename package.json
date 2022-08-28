@@ -7,7 +7,7 @@
     "watch": "parcel watch build ./static/index.html",
     "build": "parcel build ./static/index.html --no-minify",
     "dev": "npm run watch & node ./src/server.js",
-    "start": "parcel build ./static/index.html --no-minify && node ./src/server.js",
+    "start": "npm run build && node ./src/server.js",
     "test": "./node_modules/.bin/mocha",
     "lint": "eslint ./src",
     "stylelint": "stylelint '**/*.scss'"

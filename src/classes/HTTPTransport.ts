@@ -1,4 +1,4 @@
-enum METHODS {
+enum Methods {
   GET = 'GET',
   POST = 'POST',
   PUT = 'PUT',
@@ -9,7 +9,7 @@ enum METHODS {
 type TRequestData = Record<string, string | number>;
 
 export type TRequestOptions = {
-  method?: METHODS
+  method?: Methods
   headers?: Record<string, string>
   timeout?: number
   data?: unknown
@@ -31,28 +31,28 @@ class HTTPTransport {
   }
 
   public get = (url: string, options = {}): Promise<XMLHttpRequest> => {
-    return this.request(url, { ...options, method: METHODS.GET });
+    return this.request(url, { ...options, method: Methods.GET });
   };
 
   public post = (url: string, options = {}): Promise<XMLHttpRequest> => {
-    return this.request(url, { ...options, method: METHODS.POST });
+    return this.request(url, { ...options, method: Methods.POST });
   };
 
   public put = (url: string, options = {}): Promise<XMLHttpRequest> => {
-    return this.request(url, { ...options, method: METHODS.PUT });
+    return this.request(url, { ...options, method: Methods.PUT });
   };
 
   public patch = (url: string, options = {}): Promise<XMLHttpRequest> => {
-    return this.request(url, { ...options, method: METHODS.PATCH });
+    return this.request(url, { ...options, method: Methods.PATCH });
   };
 
   public delete = (url: string, options = {}): Promise<XMLHttpRequest> => {
-    return this.request(url, { ...options, method: METHODS.DELETE });
+    return this.request(url, { ...options, method: Methods.DELETE });
   };
 
   request = (url: string, options: TRequestOptions): any => {
     const {
-      method = METHODS.GET,
+      method = Methods.GET,
       headers = {},
       data,
       timeout = 5000,
@@ -60,7 +60,7 @@ class HTTPTransport {
     } = options;
 
     // Если метод GET и передана data, трансформировать data в query запрос
-    const query = method === METHODS.GET ? queryStringify(data as TRequestData) : '';
+    const query = method === Methods.GET ? queryStringify(data as TRequestData) : '';
 
     return new Promise((resolve, reject) => {
       const xhr = new window.XMLHttpRequest();
@@ -88,7 +88,7 @@ class HTTPTransport {
       xhr.timeout = timeout;
       xhr.ontimeout = () => reject(xhr);
 
-      if (method === METHODS.GET || !data) {
+      if (method === Methods.GET || !data) {
         xhr.send();
       } else {
         xhr.send(data as any);
