@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-airbnb",
+  "extends": "stylelint-config-standard",
   "rules": {
     "declaration-colon-space-after": "always-single-line"
   },
