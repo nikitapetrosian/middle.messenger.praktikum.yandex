@@ -58,7 +58,6 @@
     "regenerator-runtime": "^0.13.7",
     "sass": "^1.32.13",
     "stylelint": "^13.13.1",
-    "stylelint-config-airbnb": "0.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.19.0",
     "typescript": "^4.3.2"
