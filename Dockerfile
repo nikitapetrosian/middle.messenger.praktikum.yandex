@@ -1,4 +1,4 @@
-FROM ubuntu:21.04
+FROM node:16
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Moscow
 RUN apt update && apt install -y nodejs && apt install -y npm
