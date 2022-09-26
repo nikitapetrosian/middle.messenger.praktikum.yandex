@@ -1,0 +1,12 @@
+/node_modules
+/server/node_modules
+
+.env
+/.cache
+/dist
+
+/.vscode
+/.idea
+.DS_Store
+/temp
+/lib
